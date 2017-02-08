@@ -22,20 +22,25 @@ $(function() {
 	$('a').smoothScroll();
 });
 
-function loadCanvas(id) {
+function loadCanvas() {
 	
-	WIDTH = window.innerWidth;
-	HEIGHT = window.innerHeight;
-	
+	//WIDTH = window.innerWidth;
+	//HEIGHT = window.innerHeight;
 	canvas = document.getElementById('dots');
-	canvas.width = WIDTH;
+	canvas.style.width = '100%';
+	canvas.style.height = '100%';
+
+	canvas.width = canvas.offsetWidth;
+	canvas.height = canvas.offsetHeight;
 	
+	/*
 	if(HEIGHT < 400) {
 		canvas.height = 400;
 	}
 	else {
 		canvas.height = HEIGHT - 60;
 	}
+	*/
 	canvas.addEventListener('mousedown', cmousedown, false);
 	canvas.addEventListener('mouseup', cmouseup, false);
 
