@@ -22,7 +22,7 @@ $(function() {
 	$('a').smoothScroll();
 });
 
-function loadCanvas() {
+function canvassetup() {
 	
 	//WIDTH = window.innerWidth;
 	//HEIGHT = window.innerHeight;
