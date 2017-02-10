@@ -5,6 +5,6 @@ function canvasSetup() {
 	ctx.canvas.width = 400;
 	ctx.canvas.height = 200;
 	ctx.moveTo(0,0);
-	ctx.lineTo(200,100);
+	ctx.lineTo(400,200);
 	ctx.stroke();
 }
