@@ -88,10 +88,15 @@
     </header>
     <section class="container">
 		<div id="window">
-			<canvas id="dots"></canvas>
+			<canvas id="dots" width="200" height="100"></canvas>
 		</div>
 		<script>
-		canvassetup();
+		<!--canvassetup();-->
+		var canvas = document.getElementById("dots");
+		var ctx = c.getContext("2d");
+		ctx.moveTo(0,0);
+		ctx.lineTo(200,100);
+		ctx.stroke();
 		</script>
     </section>
     <!-- About Section -->
