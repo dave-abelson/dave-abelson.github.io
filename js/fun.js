@@ -1,9 +1,7 @@
 //Fun canvas panel
 var canvas = document.getElementById("dots");
-canvas.style.width = '100%';
-canvas.style.height = '100%';
-canvas.width = canvas.offsetWidth;
-canvas.height = canvas.offsetHeight;
+canvas.width = 500;
+canvas.height = 500;
 
 var ctx = c.getContext("2d");
 ctx.beginPath();
