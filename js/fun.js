@@ -19,7 +19,7 @@ $(function() {
 	}
 	requestAnimationFrame(draw);
 	setAccentColor();
-	//$('a').smoothScroll();
+	$('a').smoothScroll();
 });
 
 function canvasSetup() {
