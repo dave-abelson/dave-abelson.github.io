@@ -29,7 +29,7 @@ function canvasSetup() {
 
 	var canvas = document.getElementById("dots");
 
-	canvas.width = WIDTH - 400;
+	canvas.width = WIDTH - 350;
 	
 	if (HEIGHT < 400) {
 		canvas.height = 400;	
