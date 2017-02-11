@@ -34,7 +34,7 @@ function canvasSetup() {
 	if (HEIGHT < 400) {
 		canvas.height = 400;	
 	} else {
-		canvas.height = HEIGHT - 60;
+		canvas.height = HEIGHT - 100;
 	}
 	canvas.addEventListener('mousedown', cMouseDown, false);
 	canvas.addEventListener('mouseup', cMouseUp, false);
