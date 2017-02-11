@@ -1,6 +1,8 @@
 //Fun canvas panel
-var WIDTH = window.innerWidth;
-var HEIGHT = window.innerHeight;
+//var WIDTH = window.innerWidth;
+//var HEIGHT = window.innerHeight;
+var WIDTH = '500';
+var HEIGHT = '500';
 var canvas;
 var pxs = [];
 var con;
@@ -19,16 +21,16 @@ $(function() {
 	}
 	requestAnimationFrame(draw);
 	setAccentColor();
-	$('a').smoothScroll();
+	//$('a').smoothScroll();
 });
 
 function canvasSetup() {
 	
-	WIDTH = window.innerWidth;
-	HEIGHT = window.innerHeight;
+	//WIDTH = window.innerWidth;
+	//HEIGHT = window.innerHeight;
 
 	var canvas = document.getElementById("dots");
-
+	/*
 	canvas.width = WIDTH - 350;
 	
 	if (HEIGHT < 400) {
@@ -36,6 +38,9 @@ function canvasSetup() {
 	} else {
 		canvas.height = HEIGHT - 60; 
 	}
+	*/
+	canvas.width = WIDTH;
+	canvas.height = HEIGHT;
 	canvas.addEventListener('mousedown', cMouseDown, false);
 	canvas.addEventListener('mouseup', cMouseUp, false);
 
@@ -162,6 +167,7 @@ function Dot(color) {
 			if (this.y > HEIGHT - this.r || this.y < this.r) {
 				this.dy *= -1;
 			}
+
 		} else {
 			this.savedDx = this.dx;
 			this.savedDy = this.dy;
