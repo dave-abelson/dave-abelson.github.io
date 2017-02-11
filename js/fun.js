@@ -139,7 +139,7 @@ function Dot(color) {
 		con.closePath();
 
 		con.fillStyle = color;
-		con.fill;
+		con.fill();
 	};
 	
 	this.move = function() {
