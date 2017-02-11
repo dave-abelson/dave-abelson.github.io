@@ -1,8 +1,8 @@
 //Fun canvas panel
 //var WIDTH = window.innerWidth;
 //var HEIGHT = window.innerHeight;
-var WIDTH = '500';
-var HEIGHT = '500';
+var WIDTH = window.innerWidth;
+var HEIGHT = window.innerHeight;
 var canvas;
 var pxs = [];
 var con;
@@ -26,21 +26,17 @@ $(function() {
 
 function canvasSetup() {
 	
-	//WIDTH = window.innerWidth;
-	//HEIGHT = window.innerHeight;
+	WIDTH = window.innerWidth;
+	HEIGHT = window.innerHeight;
 
 	var canvas = document.getElementById("dots");
-	/*
-	canvas.width = WIDTH - 350;
+	canvas.width = WIDTH;
 	
 	if (HEIGHT < 400) {
 		canvas.height = 400;	
 	} else {
 		canvas.height = HEIGHT - 60; 
 	}
-	*/
-	canvas.width = WIDTH;
-	canvas.height = HEIGHT;
 	canvas.addEventListener('mousedown', cMouseDown, false);
 	canvas.addEventListener('mouseup', cMouseUp, false);
 
