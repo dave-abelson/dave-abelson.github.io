@@ -16,7 +16,7 @@ $(function() {
 	for (i = 0; i < 50; i += 1) {
 		pxs[i] = new Dot(random_color());	
 		pxs[i].reset();
-	})
+	}
 	requestAnimationFrame(draw);
 	setAccentColor();
 	$('a').smoothScroll();
