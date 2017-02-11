@@ -102,7 +102,7 @@ function Dot(color) {
 		this.x = (WIDTH * Math.random());
 		this.y = (HEIGHT * Math.random());
 
-		this.r = this.setting.radius;
+		this.r = this.settings.radius;
 
 		//reset velocity
 		this.dx = (this.settings.x_speed) * (Math.random() < .5 ? -.5 : .5);
