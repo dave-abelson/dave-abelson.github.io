@@ -30,8 +30,12 @@ function canvasSetup() {
 	var canvas = document.getElementById("dots");
 
 	canvas.width = WIDTH;
-	canvas.height = HEIGHT - 40;
 	
+	if (HEIGHT < 400) {
+		canvas.height = 400;	
+	} else {
+		canvas.height = HEIGHT - 60;
+	}
 	canvas.addEventListener('mousedown', cMouseDown, false);
 	canvas.addEventListener('mouseup', cMouseUp, false);
 
@@ -59,6 +63,7 @@ function addAccentColor() {
 		// added the +5 to not affect the <nav>... kinda hacky
 	}
 }
+
 
 function cMouseDown(e) {
 	cx = e.pageX;
