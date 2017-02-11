@@ -29,12 +29,12 @@ function canvasSetup() {
 
 	var canvas = document.getElementById("dots");
 
-	canvas.width = WIDTH;
+	canvas.width = WIDTH - 100;
 	
 	if (HEIGHT < 400) {
 		canvas.height = 400;	
 	} else {
-		canvas.height = HEIGHT - 400; 
+		canvas.height = HEIGHT - 60; 
 	}
 	canvas.addEventListener('mousedown', cMouseDown, false);
 	canvas.addEventListener('mouseup', cMouseUp, false);
