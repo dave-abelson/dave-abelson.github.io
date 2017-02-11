@@ -30,7 +30,7 @@ function canvasSetup() {
 	var canvas = document.getElementById("dots");
 
 	canvas.width = WIDTH;
-	canvas.height = HEIGHT;
+	canvas.height = HEIGHT - 40;
 	
 	canvas.addEventListener('mousedown', cMouseDown, false);
 	canvas.addEventListener('mouseup', cMouseUp, false);
