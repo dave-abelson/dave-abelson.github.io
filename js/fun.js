@@ -67,8 +67,8 @@ function addAccentColor() {
 
 
 function cMouseDown(e) {
-	cx = e.pageX;
-	cy = e.pageY;
+	cx = e.screenX;
+	cy = e.screenY;
 	imd = true;
 }
 
