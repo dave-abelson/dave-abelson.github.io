@@ -15,7 +15,7 @@ $(function() {
 	canvasSetup();
 	
 	var i;
-	for (i = 0; i < 50; i += 1) {
+	for (i = 0; i < 75; i += 1) {
 		pxs[i] = new Dot(random_color());	
 		pxs[i].reset();
 	}
