@@ -141,11 +141,11 @@ function Dot(color) {
 		if (!imd) {
 			if (this.savedDx != null) {
 				this.dx = (this.settings.x_speed) * (Math.random() < .5 ? -.5 : .5);
-				this.savedDx = null;)
+				this.savedDx = null;
 			}
 			if (this.savedDy != null) {
 				this.dy = (this.settings.y_speed) * (Math.random() < .5 ? -.5 : .5);
-				this.savedDy = null;)
+				this.savedDy = null;
 			}
 
 			this.x += (this.ratio / this.settings.lifetime) * this.dx;
